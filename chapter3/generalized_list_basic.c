@@ -6,12 +6,15 @@ typedef enum {
     SUBLIST
 } NodeType;
 
+// Block: 定义广义表结点的数据布局，type 负责区分“原子”与“子表”两类元素。
+// Block: 这是广义表递归定义的基础：同一个结点结构既能表示单个数据，也能表示一个子表入口。
 typedef struct GNode {
     NodeType type;
     char atom;
     struct GNode *sublist;
     struct GNode *next;
 } GNode;
+// Idea: 广义表常用“类型标签 + 指针”建模，用 next 串同层、用 sublist 指向下一层。
 
 // 块说明：setup，创建原子结点（如 a、b、c）。
 GNode *create_atom(char value) {

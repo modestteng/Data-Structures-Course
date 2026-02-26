@@ -5,6 +5,7 @@
 - Prefer comments above major sections: setup, core logic, edge handling, output, and cleanup.
 - Avoid noisy line-by-line comments for trivial statements.
 - Match comment language to the user's request language.
+- The user is learning data structures; when writing block comments, briefly connect the code block to relevant data-structure knowledge points.
 - In this project, all code must use C language only.
 - Use fixed comment prefixes for consistency:
 - `// Block:` at the start of each major code block.

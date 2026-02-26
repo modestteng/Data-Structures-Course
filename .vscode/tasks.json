@@ -1,0 +1,15 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run current C file",
+      "type": "shell",
+      "command": "C:\\mingw_x64_14_2_0\\mingw64\\bin\\gcc.exe \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\"; & \"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
