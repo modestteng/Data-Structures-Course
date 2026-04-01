@@ -7,9 +7,9 @@
 - Match comment language to the user's request language.
 - The user is learning data structures; when writing block comments, briefly connect the code block to relevant data-structure knowledge points.
 - In this project, all code must use C language only.
-- Use fixed comment prefixes for consistency:
-- `// Block:` at the start of each major code block.
-- `// Idea:` at the end of a block only when a clear engineering or philosophical principle is present.
+- Write block comments directly as natural comment content.
+- Do not use fixed prefixes such as `// Block:` or `// Idea:` in generated code comments.
+- If a block needs an explanatory note or principle, write that meaning directly in the comment itself.
 
 ## Naming Convention
 

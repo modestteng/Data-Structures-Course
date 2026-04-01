@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gcc homework/experiment_4.c -o homework/experiment_4 -Wall)"
+    ]
+  }
+}
