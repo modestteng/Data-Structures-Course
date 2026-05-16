@@ -1,0 +1,92 @@
+theme: jekyll-theme-chirpy
+
+lang: zh-CN
+timezone: Asia/Shanghai
+
+title: 数据结构实验笔记
+tagline: 涂老师课程的 15 周 C 语言实验
+description: >-
+  按周整理的《数据结构》课程实验：顺序表 / 链表 / 栈 / 队列 /
+  字符串 / 稀疏矩阵 / 广义表 / 二叉树，每篇含完整 C 代码与运行说明。
+
+url: "https://modestteng.github.io"
+baseurl: "/Data-Structures-Course"
+
+github:
+  username: modestteng
+
+social:
+  name: modestteng
+  email: ""
+  links:
+    - https://github.com/modestteng
+
+avatar: ""
+
+paginate: 10
+
+permalink: /posts/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      math: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+theme_mode: dual
+
+exclude:
+  - "homework/"
+  - "linear list/"
+  - "Stacks and queues/"
+  - "chapter3/"
+  - "tree/"
+  - "*.exe"
+  - "*.pdf"
+  - "data.txt"
+  - "$null"
+  - ".vscode/"
+  - ".claude/"
+  - "AGENTS.md"
+  - "CLAUDE.md"
+  - "tools/"
+  - "Gemfile*"
+  - "vendor/"
+  - "node_modules/"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

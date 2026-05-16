@@ -1,0 +1,19 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
+.bundle/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# 编译产物
+*.exe
+*.o
+*.obj
+
+# 已知噪音
+$null
