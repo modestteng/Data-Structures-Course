@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gcc homework/experiment_4.c -o homework/experiment_4 -Wall)"
+      "Bash(gcc homework/experiment_4.c -o homework/experiment_4 -Wall)",
+      "Bash(gcc homework/experiment_5.c -o homework/experiment_5.exe -Wall)",
+      "Bash(gcc homework/experiment_6.c -o homework/experiment_6.exe -Wall)",
+      "Bash(gcc -fsyntax-only -Wall homework/experiment_6.c)",
+      "Bash(gcc homework/experiment_7.c -o homework/experiment_7.exe)",
+      "Bash(gcc --version)",
+      "Bash(gcc -print-search-dirs)",
+      "Bash(gcc -Wl,--sysroot=\"C:/Users/崔家腾/x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev2/mingw64\" homework/experiment_7.c -o homework/experiment_7.exe)",
+      "Bash(cmd.exe /c \"for %I in \\(\\\\\"C:\\\\Users\\\\崔家腾\\\\\"\\) do @echo %~sI\")",
+      "Bash(cmd.exe /c \"for %I in \\(\\\\\"C:\\\\Users\\\\崔家腾\\\\x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev2\\\\mingw64\\\\bin\\\\gcc.exe\\\\\"\\) do @echo %~sI\")",
+      "Bash(powershell -Command \"\\(Get-Item 'C:\\\\Users\\\\崔家腾'\\).FullName; \\(New-Object -ComObject Scripting.FileSystemObject\\).GetFolder\\('C:\\\\Users\\\\崔家腾'\\).ShortPath\")",
+      "Bash(gcc -L/c/Users/崔家腾/x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0 -L/c/Users/崔家腾/x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev2/mingw64/x86_64-w64-mingw32/lib -L/c/Users/崔家腾/x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev2/mingw64/lib c:/Users/崔家腾/Desktop/Data-Structures-Course/homework/experiment_7.c -o /tmp/experiment_7.exe)",
+      "Bash(cp /tmp/experiment_7.exe \"c:/Users/崔家腾/Desktop/Data-Structures-Course/homework/experiment_7.exe\")"
     ]
   }
 }

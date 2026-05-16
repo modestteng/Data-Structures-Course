@@ -4,7 +4,7 @@
     {
       "label": "Run current C file",
       "type": "shell",
-      "command": "chcp 65001 > $null; & \"C:\\mingw_x64_14_2_0\\mingw64\\bin\\gcc.exe\" -finput-charset=UTF-8 -fexec-charset=UTF-8 \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\"; & \"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
+      "command": "chcp 65001 > $null; $dir = '${fileDirname}'; $hasHeader = (Get-ChildItem -Path $dir -Filter '*.h' -ErrorAction SilentlyContinue).Count -gt 0; if ($hasHeader) { $srcs = (Get-ChildItem -Path $dir -Filter '*.c').FullName; $leaf = Split-Path $dir -Leaf; $exeName = Join-Path $dir ($leaf + '.exe') } else { $srcs = @('${file}'); $exeName = '${fileDirname}\\${fileBasenameNoExtension}.exe' }; & 'C:\\mingw_x64_14_2_0\\mingw64\\bin\\gcc.exe' -finput-charset=UTF-8 -fexec-charset=UTF-8 $srcs -o $exeName; if ($LASTEXITCODE -eq 0) { & $exeName }",
       "presentation": {
         "reveal": "always",
         "panel": "shared",

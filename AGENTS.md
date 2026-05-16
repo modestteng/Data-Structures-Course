@@ -4,12 +4,14 @@
 - Keep behavior unchanged unless the user explicitly asks for logic refactoring.
 - Prefer comments above major sections: setup, core logic, edge handling, output, and cleanup.
 - Avoid noisy line-by-line comments for trivial statements.
+- For key functions or code blocks, comments should explain their role in the overall program/project — not just what they do locally, but why they exist and how they serve the program's goal.
 - Match comment language to the user's request language.
 - The user is learning data structures; when writing block comments, briefly connect the code block to relevant data-structure knowledge points.
 - In this project, all code must use C language only.
 - Write block comments directly as natural comment content.
 - Do not use fixed prefixes such as `// Block:` or `// Idea:` in generated code comments.
 - If a block needs an explanatory note or principle, write that meaning directly in the comment itself.
+- Use only `//` line comments throughout source files. `/* ... */` block comments are not allowed, including for multi-line notes — stack consecutive `//` lines instead.
 
 ## Naming Convention
 
